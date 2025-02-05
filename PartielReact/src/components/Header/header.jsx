@@ -2,7 +2,7 @@ import './header.scss';
 
 export default function Header() {
 	return (
-		< nav class="desktop-nav" >
+		< nav className="desktop-nav" >
 			<a href="index.html"><i class="fas fa-film"></i></a>
 			<ul>
 				<li><a href="">Films</a></li>
