@@ -1,0 +1,46 @@
+.desktop-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #032541;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.desktop-nav i {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+
+.desktop-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.desktop-nav li {
+  list-style: none;
+}
+
+.desktop-nav li a {
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.desktop-nav li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
