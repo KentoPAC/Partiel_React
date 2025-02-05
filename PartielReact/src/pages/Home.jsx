@@ -2,6 +2,8 @@ import '../css/style.css';
 import Header from '../components/Header/header.jsx';
 import Footer from '../components/Footer/footer.jsx';
 import Searchbar from '../components/Searchbar/searchbar.jsx';
+import MediaList from '../components/MediaList/medialist.jsx';
+
 export default function Home() {
   return (
     <>
@@ -15,7 +17,9 @@ export default function Home() {
             <button className="active" id="day">Aujourd'hui</button>
             <button id="week">Cette semaine</button>
           </div>
-          <div className="grid-tendances" id="tendances"></div>
+          <div className="grid-tendances" id="tendances">
+            <MediaList functionName="getDataByTrending" type="movie" filter="day" />
+          </div>
         </div>
       </div>
 
@@ -26,7 +30,10 @@ export default function Home() {
             <button className="active" id="top_rated">Mieux notées</button>
             <button id="popular">Populaires</button>
           </div>
-          <div className="grid-tendances" id="populaires"></div>
+          <div className="grid-tendances" id="populaires">
+            <MediaList functionName="getDataByTvCategory" category="popular" />
+
+          </div>
         </div>
       </div>
       <Footer></Footer>
