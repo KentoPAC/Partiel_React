@@ -34,3 +34,55 @@
   padding-top: 30px;
   margin-bottom: 30px;
 }
+
+.tendances-container {
+  margin-top: 40px;
+}
+
+.title-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.title-filter h2 {
+  margin-right: 20px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.title-filter button {
+  width: 150px;
+  min-width: 150px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.title-filter>button {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #032541;
+  background-color: white;
+  border: solid 2px #032541;
+}
+
+.title-filter>button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  background-color: #032541;
+  border: solid 2px #032541;
+}
+
+.title-filter .active {
+  color: white;
+  background-color: #032541;
+  border: solid 2px #032541;
+}

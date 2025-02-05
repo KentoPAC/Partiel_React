@@ -1,5 +1,6 @@
 import '../css/style.css';
 import Header from '../components/Header/header.jsx';
+import Footer from '../components/Footer/footer.jsx';
 export default function Home() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function Home() {
           <div className="grid-tendances" id="populaires"></div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
